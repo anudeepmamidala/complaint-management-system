@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Complaint System - Home</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+    <div style="text-align: right; margin-bottom: 20px;">
+        <form th:action="@{/logout}" method="post" style="display:inline;">
+            <button type="submit" class="logout-btn">Logout</button>
+        </form>
+    </div>
+
+    <h1>Welcome to the Complaint Management System</h1>
+
+    <div class="home-links">
+        <a class="btn" href="/complaints/submit">Submit a Complaint</a>
+        <a class="btn" href="/complaints/view">View Complaints</a>
+    </div>
+</body>
+</html>
